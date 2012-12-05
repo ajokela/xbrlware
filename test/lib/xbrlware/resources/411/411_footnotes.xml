@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dei="http://xbrl.us/dei/2009-01-31" xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+ xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:us-gaap="http://xbrl.us/us-gaap/2009-01-31"
+ xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <link:schemaRef xlink:href="schema.xsd" xlink:type="simple"/>
+   
+    <xbrli:context id="eol_PE15519---0910-Q0009_STD_Inst_20071231_0_411810x400328">
+        <xbrli:entity>
+            <xbrli:identifier scheme="http://www.sec.gov/CIK">
+                0000056873
+            </xbrli:identifier>
+            <xbrli:segment>
+                <xbrldi:explicitMember dimension="us-gaap:StatementEquityComponentsAxis">
+                    us-gaap:AccumulatedOtherComprehensiveIncomeMember
+                </xbrldi:explicitMember>
+            </xbrli:segment>
+        </xbrli:entity>
+        <xbrli:period>
+            <xbrli:forever/>
+        </xbrli:period>
+    </xbrli:context>
+	
+    <xbrli:context id="D2008Q4">
+        <xbrli:entity>
+            <xbrli:identifier scheme="http://www.sec.gov/CIK">
+                0000056873
+            </xbrli:identifier>
+        </xbrli:entity>
+        <xbrli:period>
+             <xbrli:instant>2008-12-31</xbrli:instant>
+        </xbrli:period>
+    </xbrli:context>
+
+    <xbrli:unit id="USD">
+        <xbrli:measure>
+            iso4217:USD
+        </xbrli:measure>
+    </xbrli:unit>
+    <us-gaap:StockholdersEquity contextRef="eol_PE15519---0910-Q0009_STD_Inst_20071231_0_411810x400328" unitRef="USD" decimals="-6" id="fnid_667467_1005_80000001">1129000000</us-gaap:StockholdersEquity>
+	<us-gaap:DividendsPreferredStock contextRef="eol_PE15519---0910-Q0009_STD_Inst_20071231_0_411810x400328" unitRef="USD" decimals="-6" id="fnid_667467_9004_70000023">3295000000</us-gaap:DividendsPreferredStock>
+	<us-gaap:OtherComprehensiveIncomeAvailableForSaleSecuritiesAdjustmentNetOfTaxPeriodIncreaseDecrease contextRef="eol_PE15519---0910-Q0009_STD_Inst_20071231_0_411810x400328" unitRef="USD" decimals="-6" id="fnid_667467_4005_80000003">-7054000000</us-gaap:OtherComprehensiveIncomeAvailableForSaleSecuritiesAdjustmentNetOfTaxPeriodIncreaseDecrease>
+	<us-gaap:SalesRevenueGoodsNet contextRef="D2008Q4" decimals="-6" unitRef="USD">18094000000</us-gaap:SalesRevenueGoodsNet>
+	
+	<link:footnoteLink xlink:role="http://www.xbrl.org/2003/role/link" xlink:type="extended">
+		<link:loc xlink:href="#fnid_667467_1005_80000001" xlink:label="fnid_id1" xlink:type="locator"/>
+		<link:loc xlink:href="#fnid_667467_4005_80000003" xlink:label="fnid_id1" xlink:type="locator"/>
+		
+		<link:loc xlink:href="#fnid_667467_9004_70000023" xlink:label="fnid_id2" xlink:type="locator"/>
+		
+		<link:loc xlink:href="#fnid_667467_1005_80000001" xlink:label="fnid_id3" xlink:type="locator"/>
+		
+		<link:footnote xlink:label="footnote_667440" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en-US">Amounts shown are net-of-tax. For additional information on accumulated OCI, see Note 13 - Shareholders' Equity and Earnings Per Common Share to the Consolidated Financial Statements.</link:footnote>
+		<link:footnote xlink:label="footnote_667440" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="de">De bedragen zijn exclusief belasting. Voor meer informatie over opgebouwde OCI, zie noot 13 - het eigen vermogen en de winst per gewoon aandeel bij de geconsolideerde jaarrekening.</link:footnote>
+		
+		<link:footnote xlink:label="footnote_667441" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en-US">Includes adjustments for the fair value of certain Countrywide stock-based compensation awards of 507 thousand shares and $86 million.</link:footnote>
+	
+		<link:footnote xlink:label="footnote_667444" xlink:role="http://www.xbrl.org/2003/role/footnote" xlink:type="resource" xml:lang="en-US">Proceeds from the issuance of Series Q and Series R Preferred Stock were allocated to the preferred stock and warrants on a relative fair value basis. For more information, see Note 13 - Shareholders' Equity and Earnings Per Common Share to the Consolidated Financial Statements.</link:footnote>
+		
+		<link:footnoteArc xlink:from="fnid_id1" xlink:to="footnote_667440" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" order="1.0" xlink:type="arc"/>
+		<link:footnoteArc xlink:from="fnid_id3" xlink:to="footnote_667441" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" order="1.0" xlink:type="arc"/>
+						
+		<link:footnoteArc xlink:from="fnid_id2" xlink:to="footnote_667441" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" order="1.0" xlink:type="arc"/>
+		<link:footnoteArc xlink:from="fnid_id2" xlink:to="footnote_667444" xlink:arcrole="http://www.xbrl.org/2003/arcrole/fact-footnote" order="1.0" xlink:type="arc"/>
+	</link:footnoteLink>	
+</xbrli:xbrl>

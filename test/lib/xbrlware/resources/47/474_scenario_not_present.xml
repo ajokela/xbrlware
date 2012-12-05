@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<xbrli:xbrl xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:dei="http://xbrl.us/dei/2009-01-31" xmlns:iso4217="http://www.xbrl.org/2003/iso4217"
+ xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:us-gaap="http://xbrl.us/us-gaap/2009-01-31"
+ xmlns:xbrldi="http://xbrl.org/2006/xbrldi" xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <link:schemaRef xlink:href="schema.xsd" xlink:type="simple"/>
+    <xbrli:context id="I2007_CommonStockMember">
+        <xbrli:entity>
+            <xbrli:identifier scheme="http://www.sec.gov/CIK">
+                0000056873
+            </xbrli:identifier>
+        </xbrli:entity>
+        <xbrli:period>
+            <xbrli:forever/>
+        </xbrli:period>
+    </xbrli:context>
+    <xbrli:unit id="USD">
+        <xbrli:measure>
+            iso4217:USD
+        </xbrli:measure>
+    </xbrli:unit>
+    <us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest contextRef="I2007_CommonStockMember"
+     decimals="-6" unitRef="USD">
+        947000000
+    </us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest>
+</xbrli:xbrl>

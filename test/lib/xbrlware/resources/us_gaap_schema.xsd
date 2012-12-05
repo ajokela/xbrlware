@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dei="http://xbrl.us/dei/2009-01-31" xmlns:dei-std="http://xbrl.us/dei-std/2009-01-31" xmlns:kr="http://www.kroger.com/20090815" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:us-gaap="http://xbrl.us/us-gaap/2009-01-31" xmlns:us-gaap-all="http://xbrl.us/us-gaap-all/2009-01-31" xmlns:us-gaap-std="http://xbrl.us/us-gaap-std/2009-01-31" xmlns:us-roles="http://xbrl.us/us-roles/2009-01-31" xmlns:us-types="http://xbrl.us/us-types/2009-01-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:xlink="http://www.w3.org/1999/xlink" elementFormDefault="qualified" targetNamespace="http://www.kroger.com/20090815">
+  <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+  <xsd:import namespace="http://xbrl.us/us-gaap/2009-01-31" schemaLocation="http://taxonomies.xbrl.us/us-gaap/2009/elts/us-gaap-2009-01-31.xsd"/>
+  <xsd:import namespace="http://xbrl.us/us-types/2009-01-31" schemaLocation="http://taxonomies.xbrl.us/us-gaap/2009/elts/us-types-2009-01-31.xsd"/>
+  <xsd:import namespace="http://xbrl.us/dei-std/2009-01-31" schemaLocation="http://taxonomies.xbrl.us/us-gaap/2009/non-gaap/dei-std-2009-01-31.xsd"/>
+  <xsd:import namespace="http://xbrl.us/us-gaap/negated/2008-03-31" schemaLocation="http://www.xbrl.org/lrr/role/negated-2008-03-31.xsd"/>
+</xsd:schema>  

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" targetNamespace="http://pbg.com/2009-09-05" xmlns:bgllc="http://pbg.com/2009-09-05" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:us-types="http://xbrl.us/us-types/2009-01-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt">
+
+  <annotation>
+    <appinfo>
+      <link:roleType roleURI="http://pbg.com/20090613/role/Guarantees" id="Guarantees">
+        <link:definition>0615 - Disclosure - Guarantees</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/StatementsOfChangesInEquityParenthetical" id="StatementsOfChangesInEquityParenthetical">
+        <link:definition>041 - Statement - Condensed Consolidated Statements of Changes in Equity (Parenthetical) (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/StatementsOfChangesInEquity" id="StatementsOfChangesInEquity">
+        <link:definition>04 - Statement - Condensed Consolidated Statements of Changes in Shareholders Equity (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/StatementsOfComprehensiveIncome" id="StatementsOfComprehensiveIncome">
+        <link:definition>05 - Statement - Condensed Consolidated Statements of Comprehensive Income (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/BalanceSheets" id="BalanceSheets">
+        <link:definition>03 - Statement - Condensed Consolidated Balance Sheets (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/StatementsOfCashFlows" id="StatementsOfCashFlows">
+        <link:definition>02 - Statement - Condensed Consolidated Statements of Cash Flows (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/StatementsOfOperations" id="StatementsOfOperations">
+        <link:definition>01 - Statement - Condensed Consolidated Statements of Operations (Unaudited)</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/DocumentAndEntityInformation" id="DocumentAndEntityInformation">
+        <link:definition>00 - Document - Document and Company Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/Contingencies" id="Contingencies">
+        <link:definition>0614 - Disclosure - Contingencies</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/SupplementalCashFlowInformation" id="SupplementalCashFlowInformation">
+        <link:definition>0613 - Disclosure - Supplemental Cash Flow Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/RestructuringCharges" id="RestructuringCharges">
+        <link:definition>0612 - Disclosure - Restructuring Charges</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/SegmentInformation" id="SegmentInformation">
+        <link:definition>0611 - Disclosure - Segment Information</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/PensionAndPostretirementMedicalBenefitPlans" id="PensionAndPostretirementMedicalBenefitPlans">
+        <link:definition>0609 - Disclosure - Pension and Postretirement Medical Benefit Plans</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/FinancialInstrumentsAndRiskManagement" id="FinancialInstrumentsAndRiskManagement">
+        <link:definition>0608 - Disclosure - Financial Instruments and Risk Management</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/FairValueMeasurements" id="FairValueMeasurements">
+        <link:definition>0607 - Disclosure - Fair Value Measurements</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/OtherIntangibleAssetsNetAndGoodwill" id="OtherIntangibleAssetsNetAndGoodwill">
+        <link:definition>0606 - Disclosure - Other Intangible Assets, net and Goodwill</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/BalanceSheetDetails" id="BalanceSheetDetails">
+        <link:definition>0605 - Disclosure - Balance Sheet Details</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/ShareBasedCompensation" id="ShareBasedCompensation">
+        <link:definition>0604 - Disclosure - Share Based Compensation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/NewAccountingStandards" id="NewAccountingStandards">
+        <link:definition>0603 - Disclosure - New Accounting Standards</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/SeasonalityOfBusiness" id="SeasonalityOfBusiness">
+        <link:definition>0602 - Disclosure - Seasonality of Business</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/BasisOfPresentation" id="BasisOfPresentation">
+        <link:definition>0601 - Disclosure - Basis of Presentation</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:roleType roleURI="http://pbg.com/20090613/role/IncomeTaxes" id="IncomeTaxes">
+        <link:definition>0610 - Disclosure - Income Taxes</link:definition>
+        <link:usedOn>link:presentationLink</link:usedOn>
+        <link:usedOn>link:calculationLink</link:usedOn>
+        <link:usedOn>link:definitionLink</link:usedOn>
+      </link:roleType>
+      <link:linkbaseRef xlink:type="simple" xlink:href="cal.xml" xlink:role="http://www.xbrl.org/2003/role/calculationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Calculation Links, all" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="pre.xml" xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Presentation Links, all" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="def.xml" xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Definition Links, all" />
+      <link:linkbaseRef xlink:type="simple" xlink:href="lab.xml" xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase" xlink:title="Label Links, all" />
+    </appinfo>
+  </annotation>
+  
+  <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="xbrl_xsd/xbrl-instance-2003-12-31.xsd" />
+  <import namespace="http://www.xbrl.org/2003/linkbase" schemaLocation="xbrl_xsd/xbrl-linkbase-2003-12-31.xsd" />
+  <import namespace="http://xbrl.us/dei/2009-01-31" schemaLocation="xbrl_xsd/dei-2009-01-31.xsd" />
+  <import namespace="http://xbrl.us/us-gaap/2009-01-31" schemaLocation="xbrl_xsd/us-gaap-2009-01-31.xsd" />
+  <import namespace="http://xbrl.us/us-types/2009-01-31" schemaLocation="xbrl_xsd/us-types-2009-01-31.xsd" />
+  
+  <element id="bgllc_SeasonalityOfBusinessAbstract" name="SeasonalityOfBusinessAbstract" abstract="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <element id="bgllc_BalanceSheetDetailsAbstract" name="BalanceSheetDetailsAbstract" abstract="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <element id="bgllc_FairValueMeasurementsAbstract" name="FairValueMeasurementsAbstract" abstract="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <element id="bgllc_FinancialInstrumentsAndRiskManagementAbstract" name="FinancialInstrumentsAndRiskManagementAbstract" abstract="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <element id="bgllc_IncomeTaxesAbstract" name="IncomeTaxesAbstract" abstract="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <element id="bgllc_SegmentInformationAbstract" name="SegmentInformationAbstract" abstract="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <element id="bgllc_ContingenciesAbstract" name="ContingenciesAbstract" abstract="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <element id="bgllc_BalanceSheetDetailsTextBlock" name="BalanceSheetDetailsTextBlock" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <element id="bgllc_SupplementalCashFlowInformationDisclosureAbstract" name="SupplementalCashFlowInformationDisclosureAbstract" abstract="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <element id="bgllc_PrepaidExpensesAndOtherCurrentAssets" name="PrepaidExpensesAndOtherCurrentAssets" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" xbrli:balance="debit" />
+  <element id="bgllc_ContributionsFromNoncontrollingInterestHolder" name="ContributionsFromNoncontrollingInterestHolder" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" />
+  <element id="bgllc_IncomeBeforeIncomeTaxes" name="IncomeBeforeIncomeTaxes" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" />
+  <element id="bgllc_OtherAdjustmentsNet" name="OtherAdjustmentsNet" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" />
+  <element id="bgllc_IssuanceOfNoteReceivableFromNoncontrolledAffiliate" name="IssuanceOfNoteReceivableFromNoncontrolledAffiliate" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" />
+  <element id="bgllc_RepaymentsOfNoteReceivableFromNoncontrolledAffiliate" name="RepaymentsOfNoteReceivableFromNoncontrolledAffiliate" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" />
+  <element id="bgllc_WithholdingTaxEquityAwards" name="WithholdingTaxEquityAwards" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" />
+  <element id="bgllc_SeasonalityOfBusinessTextBlock" name="SeasonalityOfBusinessTextBlock" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <element id="bgllc_OwnersNetInvestment" name="OwnersNetInvestment" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="instant" xbrli:balance="credit" />
+  <element id="bgllc_ContributionsFromOwnersIncludingNoncontrollingInterests" name="ContributionsFromOwnersIncludingNoncontrollingInterests" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" />
+  <element id="bgllc_CashDistributionsToOwner" name="CashDistributionsToOwner" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" />
+  <element id="bgllc_OwnersNetInvestmentMember" name="OwnersNetInvestmentMember" type="us-types:domainItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <element id="bgllc_SellingDeliveryAndAdministrativeExpenses" name="SellingDeliveryAndAdministrativeExpenses" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" />
+  <element id="bgllc_DocumentAndCompanyInformationAbstract" name="DocumentAndCompanyInformationAbstract" abstract="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <element id="bgllc_ProceedsFromNoncontrollingInterestHolder" name="ProceedsFromNoncontrollingInterestHolder" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" xbrli:balance="debit" />
+  <element id="bgllc_Sfas158MeasurementDateAdjustmentNetOfTax" name="Sfas158MeasurementDateAdjustmentNetOfTax" type="xbrli:monetaryItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" xbrli:balance="credit" />
+  <element id="bgllc_GuaranteesAbstract" name="GuaranteesAbstract" abstract="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+  <element id="bgllc_OtherIntangibleAssetsNetAndGoodwillAbstract" name="OtherIntangibleAssetsNetAndGoodwillAbstract" abstract="true" type="xbrli:stringItemType" substitutionGroup="xbrli:item" nillable="true" xbrli:periodType="duration" />
+</schema>

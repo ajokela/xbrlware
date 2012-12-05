@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xbrldt="http://xbrl.org/2005/xbrldt"  xmlns:xbrldta="http://xbrl.org/2005/xbrldta" xsi:schemaLocation=" http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd http://xbrl.org/2005/xbrldt ../xbrldt-2005.xsd http://xbrl.org/2005/xbrldta ../xbrldta-2005.xsd">
+  <roleRef xlink:type="simple" xlink:href="some.xsd#Guarantees" roleURI="role/Guarantees" />
+  <arcroleRef xlink:type="simple" xlink:href="../xbrldt-2005.xsd#hypercube-dimension" arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension" />
+  <arcroleRef xlink:type="simple" xlink:href="../xbrldt-2005.xsd#dimension-domain" arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain" />
+  <arcroleRef xlink:type="simple" xlink:href="../xbrldt-2005.xsd#domain-member" arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member" />
+  <arcroleRef xlink:type="simple" xlink:href="../xbrldt-2005.xsd#all" arcroleURI="http://xbrl.org/int/dim/arcrole/all" />
+  <definitionLink xlink:type="extended" xlink:role="role/Guarantees">
+    <loc xlink:type="locator" xlink:href="Company.xsd#company_Sales" xlink:label="company_Sales" />
+    <loc xlink:type="locator" xlink:href="Company.xsd#company_CompanyHypercube" xlink:label="company_CompanyHypercube" />
+    <loc xlink:type="locator" xlink:href="Company.xsd#company_ByRegionPlaceholder" xlink:label="company_ByRegionPlaceholder" />
+
+    <loc xlink:type="locator" xlink:href="Company.xsd#company_AllRegions" xlink:label="company_AllRegions" />
+    <loc xlink:type="locator" xlink:href="Company.xsd#company_USAndCanadaRegion" xlink:label="company_USAndCanadaRegion" />
+    <loc xlink:type="locator" xlink:href="Company.xsd#company_EuropeRegion" xlink:label="company_EuropeRegion" />
+    <loc xlink:type="locator" xlink:href="Company.xsd#company_AsiaRegion" xlink:label="company_AsiaRegion" />
+    <loc xlink:type="locator" xlink:href="Company.xsd#company_OtherRegions" xlink:label="company_OtherRegions" />
+    <loc xlink:type="locator" xlink:href="Company.xsd#company_ByProductPlaceholder" xlink:label="company_ByProductPlaceholder" />
+    <loc xlink:type="locator" xlink:href="Company.xsd#company_AllProducts" xlink:label="company_AllProducts" />
+    <loc xlink:type="locator" xlink:href="Company.xsd#company_PharmaceuticalsSegment" xlink:label="company_PharmaceuticalsSegment" />
+    <loc xlink:type="locator" xlink:href="Company.xsd#company_GenericsSegment" xlink:label="company_GenericsSegment" />
+
+    <loc xlink:type="locator" xlink:href="Company.xsd#company_ConsumerHealthSegment" xlink:label="company_ConsumerHealthSegment" />
+    <loc xlink:type="locator" xlink:href="Company.xsd#company_OtherSegments" xlink:label="company_OtherSegments" />
+
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="company_Sales" xlink:to="company_CompanyHypercube" order="1" use="optional" xbrldt:targetRole="http://www.xbrl.org/2003/role/link" xbrldt:contextElement="scenario" xbrldta:summable="true" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="company_CompanyHypercube" xlink:to="company_ByRegionPlaceholder" order="1" use="optional" xbrldta:summable="true" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="company_ByRegionPlaceholder" xlink:to="company_AllRegions" order="1" use="optional" xbrldt:targetRole="http://www.xbrl.org/2003/role/link" xbrldt:usable="true" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="company_AllRegions" xlink:to="company_USAndCanadaRegion" order="1" use="optional" xbrldt:usable="true" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="company_AllRegions" xlink:to="company_EuropeRegion" order="2" use="optional" xbrldt:usable="true" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="company_AllRegions" xlink:to="company_AsiaRegion" order="3" use="optional" xbrldt:usable="true" />
+
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="company_AllRegions" xlink:to="company_OtherRegions" order="4" use="optional" xbrldt:usable="true" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="company_CompanyHypercube" xlink:to="company_ByProductPlaceholder" order="2" use="optional" xbrldta:summable="true" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="company_ByProductPlaceholder" xlink:to="company_AllProducts" order="1" use="optional" xbrldt:targetRole="http://www.xbrl.org/2003/role/link" xbrldt:usable="true" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="company_AllProducts" xlink:to="company_PharmaceuticalsSegment" order="1" use="optional" xbrldt:usable="true" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="company_AllProducts" xlink:to="company_GenericsSegment" order="2" use="optional" xbrldt:usable="true" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="company_AllProducts" xlink:to="company_ConsumerHealthSegment" order="3" use="optional" xbrldt:usable="true" />
+    <definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="company_AllProducts" xlink:to="company_OtherSegments" order="4" use="optional" xbrldt:usable="true" />
+  </definitionLink>
+</linkbase>

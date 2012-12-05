@@ -1,0 +1,53 @@
+                            bitstat (http://www.bitstat.com) xbrlware release notes
+                            =======================================================
+Release 1.1.3
+    * [xbrlware-ce-dev-20]  :   Support for multiple linkbase documents for presentations, calculations and definitions.  
+                                
+Release 1.1.2
+    Changes
+    * [xbrlware-ce-dev-17]  :   Added support for IFRS taxonomy.
+
+    Bugs
+    * [xbrlware-ce-dev-18]  :   Too much of verbose in irb while dealing with linkbases.
+    * [xbrlware-ce-dev-19]  :   Error thrown when there is no <element> items in taxonomy file. 
+Release 1.1.1
+    Bugs
+    * [xbrlware-ce-dev-9]  :    item_all method added to Xbrlware::Instnace
+    * [xbrlware-ce-dev-10] :    Xbrlware::Instnace, inspect method returns object id
+    * [xbrlware-ce-dev-11] :    "INF" support added to Xbrlware::Item
+    * [xbrlware-ce-dev-12] :    better linkbase support (support chained links)
+    * [xbrlware-ce-dev-13] :    Xbrlware::Instance.new now takes, XBRL content as string apart from XBRL instance file
+
+    Changes
+    * [xbrlware-ce-dev-14]  :   is_value_numeric added to Xbrlware::Item
+    * [xbrlware-ce-dev-15]  :   ns (namespace) & nsp (namespace prefix) added to Xbrlware::Item
+    * [xbrlware-ce-dev-16]  :   When no item found "item" method of instance will return empty array instead of null
+    * [xbrlware-ee-2]       :   Reports generation extracted as plugin. To use Xbrlware::Reports, have to include
+                                require 'xbrlware/reports/sec'
+    * [xbrlware-ee-3]       :   "timelines" method added linkbase links which will return periods of linkbase elements
+    * [xbrlware-ee-4]       :   RDF/Semantic support added. See, http://code.google.com/p/xbrlware/wiki/RDFSupport
+    * [xbrlware-ee-5]       :   item_by_vocab method added to Xbrlware::Instance.
+    * [xbrlware-ee-6]       :   More fine grained report formatting options.
+
+    
+Release 1.1.0
+    Bugs
+    * [xbrlware-ce-dev-4] : entity_details method of instance.rb is specific to US & not applicable to other countries   
+    * [xbrlware-ce-dev-5] : When linkbase documents mentioned in taxonomy are not available, ignore them than raising error
+    * [xbrlware-ee] : Reports, should not format entity_details like CIK, Outstanding shares and other entity details as numbers
+                    : Reports, provide custom option to format item values
+                    : Make HTML reports social friendly ( to share in facebook, myspace etc)
+    Changes
+    * [xbrlware-ce-dev-6] : context.period changed to return Context::Period object. If you are accessing period of
+                            a context as "context.period", change that to "context.period.value"
+    * [xbrlware-ce-dev-7] : is_instant?, is_duration? and is_forever? methods added to Context::Period
+    * [xbrlware-ce-dev-8] : Instant and duration period should return Date instead of String
+    Features
+    * [xbrlware-ce-dev-9] : has_scenario? added to context and has_segment? added to context.entity  
+
+Release 1.0.3
+    Bugs
+    * [xbrlware-ce-dev-1] : footnoteLink element may exist without footnote, footnoteArc in instance document.
+    * [xbrlware-ce-dev-2] : error raised when xbrl linkbase document has HTML element &#160;
+    * [xbrlware-ce-dev-3] : file_grep not working as intended when reference linkbase file is present.
+

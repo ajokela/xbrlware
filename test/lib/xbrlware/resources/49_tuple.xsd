@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:dei="http://xbrl.us/dei/2009-01-31" xmlns:dei-std="http://xbrl.us/dei-std/2009-01-31" xmlns:link="http://www.xbrl.org/2003/linkbase" xmlns:ref="http://www.xbrl.org/2006/ref" xmlns:us-gaap="http://xbrl.us/us-gaap/2009-01-31" xmlns:us-gaap-all="http://xbrl.us/us-gaap-all/2009-01-31" xmlns:us-gaap-std="http://xbrl.us/us-gaap-std/2009-01-31" xmlns:us-roles="http://xbrl.us/us-roles/2009-01-31" xmlns:us-types="http://xbrl.us/us-types/2009-01-31" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xl="http://www.xbrl.org/2003/XLink" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:t="http://xbrl_gapp_local_with_tuple" elementFormDefault="qualified" targetNamespace="http://xbrl_gapp_local_with_tuple">
+  <xsd:import namespace="http://www.xbrl.org/2003/instance" schemaLocation="xbrl_xsd/xbrl-instance-2003-12-31.xsd"/>
+  <xsd:import namespace="http://xbrl.us/us-gaap/2009-01-31" schemaLocation="xbrl_xsd/us-gaap-2009-01-31.xsd"/>
+  <xsd:import namespace="http://xbrl.us/us-types/2009-01-31" schemaLocation="xbrl_xsd/us-types-2009-01-31.xsd"/>
+  <xsd:import namespace="http://xbrl.us/dei-std/2009-01-31" schemaLocation="xbrl_xsd/dei-std-2009-01-31.xsd"/>
+  <xsd:import namespace="http://xbrl.us/us-gaap/negated/2008-03-31" schemaLocation="xbrl_xsd/negated-2008-03-31.xsd"/>
+  
+<xsd:element name="managementName" type="xbrli:tokenItemType" xbrli:periodType="instant" substitutionGroup="xbrli:item"/>
+<xsd:element name="managementTitle" type="xbrli:tokenItemType" xbrli:periodType="instant" substitutionGroup="xbrli:item"/>
+<xsd:element name="managementAge" type="xbrli:nonNegativeIntegerItemType" xbrli:periodType="instant" substitutionGroup="xbrli:item"/>
+
+<xsd:element name="department" type="xbrli:tokenItemType" xbrli:periodType="instant" substitutionGroup="xbrli:item"/>
+
+<xsd:element name="managementInformation" substitutionGroup="xbrli:tuple">
+  <xsd:complexType>
+    <xsd:complexContent>
+      <xsd:restriction base="xsd:anyType">
+        <xsd:sequence>
+          <xsd:element ref="t:managementName"/>
+          <xsd:element ref="t:managementTitle"/>
+          <xsd:element ref="t:managementAge" minOccurs="0"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:ID" use="optional"/>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:element>
+
+<xsd:element name="management_all" substitutionGroup="xbrli:tuple">
+  <xsd:complexType>
+    <xsd:complexContent>
+      <xsd:restriction base="xsd:anyType">
+        <xsd:sequence>
+          <xsd:element ref="t:department"/>
+          <xsd:element ref="t:managementInformation"/>
+        </xsd:sequence>
+        <xsd:attribute name="id" type="xsd:ID" use="optional"/>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:element>
+
+</xsd:schema>  
